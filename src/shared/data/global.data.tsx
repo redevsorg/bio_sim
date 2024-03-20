@@ -7,17 +7,14 @@ import {
   IconRss,
 } from '@tabler/icons-react';
 import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
+import Image from 'next/image';
 
 // Announcement data
 export const announcementData: AnnouncementProps = {
-  title: 'NEW',
+  title: 'SIMULATION',
   callToAction: {
-    text: 'This template is made with Next.js 14 using the new App Router »',
-    href: 'https://nextjs.org/blog/next-14',
-  },
-  callToAction2: {
-    text: 'Follow @onWidget on Twitter',
-    href: 'https://twitter.com/intent/user?screen_name=onwidget',
+    text: 'Try out the simulation now »',
+    href: 'https://bio-sim.us',
   },
 };
 
@@ -25,52 +22,32 @@ export const announcementData: AnnouncementProps = {
 export const headerData: HeaderProps = {
   links: [
     {
-      label: 'Pages',
+      label: 'About',
       icon: IconChevronDown,
       links: [
         {
-          label: 'Services',
-          href: '/services',
+          label: 'Mission',
+          href: '/mission',
         },
         {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'About us',
-          href: '/about',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
+          label: 'Collaborators',
+          href: '/collaborators',
         },
       ],
     },
     {
-      label: 'Blog',
+      label: 'Updates',
       href: '/blog',
     },
     {
-      label: 'Contact',
-      href: '/contact',
+      label: 'Guide',
+      href: '/guide',
     },
   ],
   actions: [
     {
-      text: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
+      text: 'Donate',
+      href: '/',
       targetBlank: true,
     },
   ],
@@ -82,7 +59,7 @@ export const headerData: HeaderProps = {
 
 // Footer data
 export const footerData: FooterProps = {
-  title: 'TailNext',
+  title: 'BioSim',
   links: [
     {
       label: 'Terms & Conditions',
@@ -233,16 +210,16 @@ export const footerData2: FooterProps = {
   ],
   columns: [
     {
-      title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
+      title: 'Contact',
+      texts: ['Email: biosim@example.com', 'Phone: 000-000-0000'],
     },
     {
-      title: 'Phone',
-      texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
+      title: 'Simulation',
+      texts: ['bio-sim.us',],
     },
     {
-      title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      title: 'About',
+      texts: ['Guide', 'Contributors'],
     },
   ],
   socials: [
@@ -253,17 +230,19 @@ export const footerData2: FooterProps = {
     { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
   ],
   footNote: (
-    <div className="mr-4 text-sm">
-      <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
-      Made by{' '}
+    <div className="mr-4 text-sm flex items-center gap-2">
       <a
         className="font-semibold text-slate-900 dark:text-gray-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
-        href="https://onwidget.com/"
+        href="https://redevs.org/"
       >
-        {' '}
-        onWidget
+        <Image
+        src='https://redevs.org/redevs.svg'
+        width={140}
+        height={140}
+        alt='redevs'
+        className='dark:invert opacity-75'/>
       </a>{' '}
-      · All rights reserved.
+      <a>· All rights reserved.</a>
     </div>
   ),
 };

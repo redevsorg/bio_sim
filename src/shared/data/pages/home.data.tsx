@@ -14,6 +14,7 @@ import {
   IconMapPin,
   IconPhoneCall,
   IconRocket,
+  IconCirclesRelation
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -41,64 +42,30 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+      Biology Simulation
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
+        <span className="font-semibold underline decoration-primary-600 underline-offset-2">
+          Biology Simulation
         </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
+        is a 3D interface providing young minds with a new way to learn about their organs and body functions.
       </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      It allows users to interact with models of numerous organs, zooming between different levels.
     </>
   ),
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
+    text: 'Try simulation',
+    href: 'https://bio-sim.us/',
+    icon: IconCirclesRelation,
     targetBlank: true,
   },
   callToAction2: {
-    text: 'Learn more',
-    href: '/',
+    text: 'Our mission',
+    href: '/mission',
   },
-  image: {
-    src: heroImg,
-    alt: 'Hero TailNext',
-  },
-};
-
-// SocialProof data on Home page *******************
-export const socialProofHome: SocialProofProps = {
-  id: 'socialProof-on-home',
-  hasBackground: false,
-  images: [
-    {
-      link: 'https://nextjs.org/',
-      src: nextJsLogo,
-      alt: 'NextJs Logo',
-    },
-    {
-      link: 'https://react.dev/',
-      src: reactLogo,
-      alt: 'React Logo',
-    },
-    {
-      link: 'https://tailwindcss.com/',
-      src: tailwindCssLogo,
-      alt: 'Tailwind CSS Logo',
-    },
-    {
-      link: 'https://www.typescriptlang.org/',
-      src: typescriptLogo,
-      alt: 'Typescript Logo',
-    },
-  ],
 };
 
 // Features data on Home page *******************
@@ -293,72 +260,15 @@ export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
   hasBackground: true,
   header: {
-    title: 'What our customers say about us',
+    title: 'Our Mission',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'We are high schoolers looking to provide young minds with a 3D interface to learn about their organs and body functions. Most students learn biology via textbook, or other 2D formats, which makes it difficult for many to absorb information or visualize how the body actually functions. This is especially true due to lack of access to viewing organs like the heart, lungs, liver, etc. in the real world. Our simulation will help students learn about parts of the body while showing them how it will look in the real world. Students will be able to interact with parts of the human anatomy, and learn about their specifics in an engaging way.',
   },
   testimonials: [
     {
-      name: 'Tayla Kirsten',
-      job: 'Marketing Manager',
-      testimonial: `I'm impressed by the speed and performance of these templates. My website now loads in the blink of an eye, significantly enhancing my visitors' experience. Thanks to TailNext, my online business is thriving.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Tayla Kirsten',
-      },
-      href: '/',
+
     },
-    {
-      name: 'Silver Jordan',
-      job: 'Senior Marketer',
-      testimonial: `I had never found it so easy to customize a website. TailNext's templates are incredibly flexible, and with Tailwind CSS, I've managed to give my website the look and feel I always wanted. Highly recommended!`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Silver Jordan',
-      },
-      href: '/',
-    },
-    {
-      name: 'Kelsey Arden',
-      job: 'Co-Founder & CEO',
-      testimonial: `As a beginner in web development, I really needed clear guidance. Tailnext made it possible. I was able to install and customize my website seamlessly, and I'm thrilled with the results!`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Kelsey Arden',
-      },
-      href: '/',
-    },
-    {
-      name: 'Sarah Johnson',
-      job: 'Business Owner',
-      testimonial: `They've not only saved me a ton of time but have also made my websites look incredibly professional. The level of detail and thought that went into designing these templates is truly impressive.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Sarah Johnson',
-      },
-      href: '/',
-    },
-    {
-      name: 'Keith Young',
-      job: 'Freelance Developer',
-      testimonial: `The clean code and integration with Next.js make my projects a breeze. Plus, the responsive design ensures that my clients' websites look amazing on any device. These templates have become my secret weapon for success!`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Keith Young',
-      },
-      href: '/',
-    },
-    {
-      name: 'Lisa Gordon',
-      job: 'Project Manager',
-      testimonial: `Their templates are not only stunning but also user-friendly. The support I received from their community has been exceptional. I'm proud to say that I've built my dream website with TailNext.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Lisa Gordon',
-      },
-      href: '/',
-    },
-  ],
+  ]
 };
 
 // FAQS data on Home page *******************

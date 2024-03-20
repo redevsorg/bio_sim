@@ -1,5 +1,5 @@
 module.exports.SITE = {
-  name: 'TailNext',
+  name: 'Biology Simulation',
 
   origin: 'https://tailnext.vercel.app',
   basePathname: '/',
