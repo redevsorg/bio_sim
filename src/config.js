@@ -1,10 +1,10 @@
 module.exports.SITE = {
   name: 'Biology Simulation',
 
-  origin: 'https://tailnext.vercel.app',
+  origin: 'https://bio-sim.vercel.app',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'TailNext — Your website with Next.js + Tailwind CSS',
-  description: 'TailNext is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  title: 'BioSim — Biology Simulation',
+  description: 'A 3D Biology Simulator for education.',
 };
