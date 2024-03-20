@@ -271,6 +271,34 @@ export const testimonialsHome: TestimonialsProps = {
   ]
 };
 
+export const socialProofHome: SocialProofProps = {
+  id: 'socialProof-on-home',
+  hasBackground: false,
+  images: [
+    {
+      link: 'https://nextjs.org/',
+      src: nextJsLogo,
+      alt: 'NextJs Logo',
+    },
+    {
+      link: 'https://react.dev/',
+      src: reactLogo,
+      alt: 'React Logo',
+    },
+    {
+      link: 'https://tailwindcss.com/',
+      src: tailwindCssLogo,
+      alt: 'Tailwind CSS Logo',
+    },
+    {
+      link: 'https://www.typescriptlang.org/',
+      src: typescriptLogo,
+      alt: 'Typescript Logo',
+    },
+  ],
+};
+
+
 // FAQS data on Home page *******************
 export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
